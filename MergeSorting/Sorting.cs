@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MergeSorting
 {
-    class Sorting<T> : ISorting<T> where T : IComparable
+    partial class Sorting<T> : ISorting<T> where T : IComparable
     {
         private T[] array;
 
