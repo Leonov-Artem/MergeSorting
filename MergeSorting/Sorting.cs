@@ -12,6 +12,7 @@ namespace MergeSorting
 
         public Sorting(T[] array) => this.array = array;
 
+        public void MergeSort() => RecMergeSort(new T[array.Length], 0, array.Length - 1);
         public void Print()
         {
             foreach (var elem in array)
