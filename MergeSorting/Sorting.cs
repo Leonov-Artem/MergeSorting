@@ -8,6 +8,15 @@ namespace MergeSorting
 {
     class Sorting<T> : ISorting<T> where T : IComparable
     {
+        private T[] array;
 
+        public Sorting(T[] array) => this.array = array;
+
+        public void Print()
+        {
+            foreach (var elem in array)
+                Console.Write(elem + " ");
+            Console.WriteLine();
+        }
     }
 }
