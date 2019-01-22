@@ -8,6 +8,7 @@ namespace MergeSorting
 {
     interface ISorting<T>
     {
-
+        T[] MergeSort();
+        void Print();
     }
 }
